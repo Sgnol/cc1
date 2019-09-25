@@ -1,6 +1,8 @@
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2014-2018, The Monero Project
 // Copyright (c) 2018-2019, The TurtleCoin Developers
+// Copyright (c) 2018-2019, Yucreat Developers
+//
 //
 // Please see the included LICENSE file for more information.
 
@@ -55,7 +57,7 @@ namespace CryptoNote
 
         const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V3 = 800000;
 
-        const unsigned EMISSION_SPEED_FACTOR = 18;
+        const unsigned EMISSION_SPEED_FACTOR = 19;
 
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -86,7 +88,7 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_DISPLAY_DECIMAL_POINT = 2;
 
-        const uint64_t MINIMUM_FEE = UINT64_C(10);
+        const uint64_t MINIMUM_FEE = UINT64_C(5);
 
         /* This section defines our minimum and maximum mixin counts required for transactions */
         const uint64_t MINIMUM_MIXIN_V1 = 0;
@@ -189,7 +191,7 @@ namespace CryptoNote
 
         const size_t FUSION_TX_MIN_INPUT_COUNT = 12;
 
-        const size_t FUSION_TX_MIN_IN_OUT_COUNT_RATIO = 4;
+        const size_t FUSION_TX_MIN_IN_OUT_COUNT_RATIO = 2;
 
         const uint32_t UPGRADE_HEIGHT_V2 = 15000;
 
@@ -211,28 +213,28 @@ namespace CryptoNote
 
         /* Block heights we are going to have hard forks at */
         const uint64_t FORK_HEIGHTS[] = {
-            17000, // 0
-            30000, // 1
-            40000, // 2
-            60000, // 3
-            70000, // 4
-            80000, // 5
-            100000, // 6
-            100000, // 7
-            100000, // 8
-            140000, // 9
-            160000, // 10
-            180000, // 11
-            200000, // 12
-            220000, // 13
-            240000, // 14
-            260000, // 15
-            280000, // 16
-            300000, // 17
+            170000, // 0
+            300000, // 1
+            400000, // 2
+            600000, // 3
+            700000, // 4
+            800000, // 5
+            1000000, // 6
+            1000000, // 7
+            1000000, // 8
+            1400000, // 9
+            1600000, // 10
+            1800000, // 11
+            2000000, // 12
+            2020000, // 13
+            2400000, // 14
+            2600000, // 15
+            2800000, // 16
+            3000000, // 17
         };
 
         /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 3;
+        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 1;
 
         const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
@@ -338,7 +340,7 @@ namespace CryptoNote
 
     const char LATEST_VERSION_URL[] = "http://www.yucreat.org";
 
-    const std::string LICENSE_URL = "https://github.com/Sgnol/blob/master/LICENSE";
+    const std::string LICENSE_URL = "https://github.com/yucreat/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
         {0xb5, 0x0c, 0x4a, 0x6c, 0xcf, 0x52, 0x59, 0x41, 0x65, 0xf1, 0x91, 0xa4, 0xb4, 0xc1, 0x43, 0xe7}};
@@ -346,7 +348,7 @@ namespace CryptoNote
     const char *const SEED_NODES[] = {
         "185.247.117.150:11897", // Amsterdam
         "185.181.10.119:11999", // Frankfurt
-        "185.144.158.244:11897", // MIami
-        "149.248.61.238:11897" // Toronto
+        "185.144.158.244:11897", // Miami
+        "45.61.49.34:11897" // Toronto
     };
 } // namespace CryptoNote
