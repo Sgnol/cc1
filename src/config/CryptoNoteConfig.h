@@ -55,7 +55,7 @@ namespace CryptoNote
 
         const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V3 = 800000;
 
-        const unsigned EMISSION_SPEED_FACTOR = 20;
+        const unsigned EMISSION_SPEED_FACTOR = 18;
 
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -110,7 +110,7 @@ namespace CryptoNote
 
         /* The mixin to use by default with zedwallet and turtle-service */
         /* DEFAULT_MIXIN_V0 is the mixin used before MIXIN_LIMITS_V1_HEIGHT is started */
-        const uint64_t DEFAULT_MIXIN_V0 = 2;
+        const uint64_t DEFAULT_MIXIN_V0 = 1;
 
         const uint64_t DEFAULT_MIXIN_V1 = MAXIMUM_MIXIN_V1;
 
@@ -232,7 +232,7 @@ namespace CryptoNote
         };
 
         /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 0;
+        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 3;
 
         const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
@@ -341,7 +341,7 @@ namespace CryptoNote
     const std::string LICENSE_URL = "https://github.com/Sgnol/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
-        {0xb5, 0x0c, 0x4a, 0x6c, 0xcf, 0x52, 0x59, 0x41, 0x65, 0xf1, 0x91, 0xa4, 0xb4, 0xc1, 0x43, 0xe2}};
+        {0xb5, 0x0c, 0x4a, 0x6c, 0xcf, 0x52, 0x59, 0x41, 0x65, 0xf1, 0x91, 0xa4, 0xb4, 0xc1, 0x43, 0xe7}};
 
     const char *const SEED_NODES[] = {
         "185.247.117.150:11897", // Amsterdam
