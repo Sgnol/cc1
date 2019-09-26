@@ -37,7 +37,7 @@ moveDecimal = 100  # TRTL has 2 decimals so 100 is the divide/multiply factor
 minAmount = 30 * moveDecimal  # min number for amount to xfer
 maxAmount = 2500 * moveDecimal  # max number for amount to xfer
 anonymity = 2
-fee = 1 # atomic units, TRTL would be 0.10 as the tx network fee
+fee = 5 # atomic units, TRTL would be 0.10 as the tx network fee
 
 def getAddress(host, port, rpcPassword):
     payload = {
