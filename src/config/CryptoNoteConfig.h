@@ -1,7 +1,7 @@
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2014-2018, The Monero Project
 // Copyright (c) 2018-2019, The TurtleCoin Developers
-// Copyright (c) 2018-2019, Yucreat Developers
+// Copyright (c) 2019-1920, Yucreat Developer Team 
 //
 //
 // Please see the included LICENSE file for more information.
@@ -57,13 +57,13 @@ namespace CryptoNote
 
         const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V3 = 800000;
 
-        const unsigned EMISSION_SPEED_FACTOR = 19;
+        const unsigned EMISSION_SPEED_FACTOR = 20;
 
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
         const char GENESIS_COINBASE_TX_HEX[] =
             "010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151"
-            "d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd5";
+            "d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd6";
 
         static_assert(
             sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1,
@@ -191,7 +191,7 @@ namespace CryptoNote
 
         const size_t FUSION_TX_MIN_INPUT_COUNT = 12;
 
-        const size_t FUSION_TX_MIN_IN_OUT_COUNT_RATIO = 2;
+        const size_t FUSION_TX_MIN_IN_OUT_COUNT_RATIO = 4;
 
         const uint32_t UPGRADE_HEIGHT_V2 = 15000;
 
@@ -234,7 +234,7 @@ namespace CryptoNote
         };
 
         /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 1;
+        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 3;
 
         const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
@@ -262,7 +262,7 @@ namespace CryptoNote
         const char MINER_CONFIG_FILE_NAME[] = "miner_conf.json";
     } // namespace parameters
 
-    const char CRYPTONOTE_NAME[] = "CreatCoin";
+    const char CRYPTONOTE_NAME[] = "YuCoin";
 
     const uint8_t TRANSACTION_VERSION_1 = 1;
 
