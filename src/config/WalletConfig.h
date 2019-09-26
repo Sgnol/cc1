@@ -24,10 +24,10 @@ namespace WalletConfig
     const std::string addressBookFilename = ".addressBook.json";
 
     /* The name of your deamon */
-    const std::string daemonName = "yuc";
+    const std::string daemonName = "yucd";
 
     /* The name to call this wallet */
-    const std::string walletName = "yucdwallet";
+    const std::string walletName = "yucwallet";
 
     /* The name of service/walletd, the programmatic rpc interface to a
        wallet */
