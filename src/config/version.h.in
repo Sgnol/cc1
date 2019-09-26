@@ -5,7 +5,7 @@
 #define PROJECT_SITE "http://www.yucreat.org"
 #define PROJECT_COPYRIGHT "Copyright 2019-2020, WOC Developer Team"
 #define APP_VER_MAJOR 1
-#define APP_VER_MINOR 00
+#define APP_VER_MINOR 01
 #define APP_VER_REV 0
 #define APP_VER_BUILD 1292
 
