@@ -189,7 +189,7 @@ add_dependencies(WalletService version)
 add_dependencies(zedwallet version)
 
 # Finally build the binaries
-set_property(TARGET TurtleCoind PROPERTY OUTPUT_NAME "yuc")
+set_property(TARGET TurtleCoind PROPERTY OUTPUT_NAME "yucd")
 set_property(TARGET zedwallet PROPERTY OUTPUT_NAME "wallet")
 set_property(TARGET zedwallet++ PROPERTY OUTPUT_NAME "wallet-beta")
 set_property(TARGET WalletService PROPERTY OUTPUT_NAME "yuc-service")
