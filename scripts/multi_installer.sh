@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Turtlecoin Multi-installer
+# CryptoYuc Multi-installer
 # a one line clone-and-compile for turtlecoin:
 #
 #     ` $ curl -sL "https://raw.githubusercontent.com/turtlecoin/turtlecoin/master/scripts/multi_installer.sh" | bash
@@ -144,7 +144,7 @@ _configure_os() {
     _note "Operating system configuration completed. You're halfway there!"
 }
 
-_note "Turtlecoin Multi_Installer v1.0 (pepperoni)"
+_note "CryptoYuc Multi_Installer v1.0 (pepperoni)"
 _colorize green " _______         _   _       _____      _       \n|__   __|       | | | |     / ____|    (_)      \n   | |_   _ _ __| |_| | ___| |     ___  _ _ __  \n   | | | | | '__| __| |/ _ \ |    / _ \| | '_ \ \n   | | |_| | |  | |_| |  __/ |___| (_) | | | | |\n   |_|\__,_|_|   \__|_|\___|\_____\___/|_|_| |_|\n" && echo
 
 _configure_os
