@@ -13,7 +13,7 @@ content = """
 """
 
 def rpc(method, params={}):
-    base_url = "http://localhost:8070/json_rpc"
+    base_url = "http://localhost:9707/json_rpc"
     payload = {
         "password": "80085",
         "jsonrpc" : "2.0",

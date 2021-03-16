@@ -14,7 +14,7 @@ $ python3.6 makechange.py
 Make two wallets and fill one or both with some funds, or start mining to it.
 Open the wallets with turtle-serivce like so:
 
-./turtle-service -w walletA.wallet -p yourpass --rpc-password test --bind-port 8070
+./turtle-service -w walletA.wallet -p yourpass --rpc-password test --bind-port 9707
 ./turtle-service -w walletB.wallet -p yourpass --rpc-password test --bind-port 8071
 
 Feel free to change these parameters if needed of course.
@@ -108,7 +108,7 @@ def sendTXs(host, port, rpcPassword, sender, receiver):
 
 
 walletdHostA = "127.0.0.1"
-walletdPortA = "8070"
+walletdPortA = "9707"
 
 walletdHostB = "127.0.0.1"
 walletdPortB = "8071"

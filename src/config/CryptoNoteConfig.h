@@ -43,7 +43,7 @@ namespace CryptoNote
         const size_t BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V3 = 11;
 
         // MONEY_SUPPLY - total number coins to be generated
-        const uint64_t MONEY_SUPPLY = UINT64_C(740000000000);
+        const uint64_t MONEY_SUPPLY = UINT64_C(720000000000);
 
         const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX = 187000;
 
@@ -293,11 +293,11 @@ namespace CryptoNote
     const uint64_t BLOCKS_SYNCHRONIZING_DEFAULT_COUNT = 100; // by default, blocks count in blocks downloading
     const size_t COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT = 1000;
 
-    const int P2P_DEFAULT_PORT = 11897;
+    const int P2P_DEFAULT_PORT = 11977;
 
-    const int RPC_DEFAULT_PORT = 11898;
+    const int RPC_DEFAULT_PORT = 11877;
 
-    const int SERVICE_DEFAULT_PORT = 8070;
+    const int SERVICE_DEFAULT_PORT = 9707;
 
     const size_t P2P_LOCAL_WHITE_PEERLIST_LIMIT = 1000;
 
@@ -344,9 +344,7 @@ namespace CryptoNote
         {0xb5, 0x0c, 0x4a, 0x6c, 0xcf, 0x52, 0x59, 0x41, 0x65, 0xf1, 0x91, 0xa4, 0xb4, 0xc1, 0x43, 0xe7}};
 
     const char *const SEED_NODES[] = {
-        "185.247.117.150:11897", // Amsterdam
-        "185.181.10.119:11999", // Frankfurt
-        "185.144.158.244:11897", // Miami
-        "45.61.49.34:11897" // Toronto
+        "209.250.246.130:11977", //Main node
+        "194.37.81.153:11977", //Main node
     };
 } // namespace CryptoNote
